@@ -1,0 +1,68 @@
+{
+  "name": "react-autocomplete-pure",
+  "description": "Typescript-friendly autocomplete component for React.js",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qramilq/react-autocomplete-pure.git"
+  },
+  "keywords": [
+    "react",
+    "autocomplete",
+    "autosuggest"
+  ],
+  "author": "Ramil Ayupov <qramilq@mail.ru>",
+  "bugs": {
+    "url": "https://github.com/qramilq/react-autocomplete-pure/issues"
+  },
+  "homepage": "https://github.com/qramilq/react-autocomplete-pure#readme",
+  "source": "src/index.ts",
+  "main": "lib/main.js",
+  "module": "lib/module.js",
+  "types": "lib/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "start": "parcel site/index.html --port 3001",
+    "build": "parcel build",
+    "clear": "rm -rf ./lib ./dist",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "^2.0.1",
+    "@parcel/transformer-typescript-types": "^2.0.1",
+    "@testing-library/dom": "^8.11.1",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.3",
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "esbuild": "^0.14.2",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest-dom": "^3.9.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-testing-library": "^5.0.1",
+    "jest": "^27.4.5",
+    "parcel": "^2.0.1",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

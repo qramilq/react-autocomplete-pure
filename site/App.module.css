@@ -1,0 +1,14 @@
+.listContainer {
+  position: absolute;
+  background: white;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  cursor: pointer;
+}
