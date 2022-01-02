@@ -28,7 +28,7 @@ function App() {
   const [suggestions, setSuggestions] = useState<Film[]>([]);
   const [value, setValue] = useState<string>('');
 
-  // When inpute changes save value.
+  // When input changes then save value
   // If change reason is type on input then get new items, save them and close dropdown if no new items fetched
   // If change reason is enter keydown then simple close dropdown
   const handleChange: AutocompletePureProps<Film>['onChange'] = useCallback(
