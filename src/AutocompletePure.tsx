@@ -10,7 +10,7 @@ import {
 } from 'react';
 import { useClickOutside } from './hooks';
 import { List } from './List';
-import { AutucompletePureProps, RenderInput } from './types';
+import { AutocompletePureProps, RenderInput } from './types';
 
 const DEFAULT_ITEM_INDEX = -1;
 
@@ -31,7 +31,7 @@ function InnerAutocompletePure<Item>(
     onSelect,
     onInputFocus,
     ...props
-  }: AutucompletePureProps<Item>,
+  }: AutocompletePureProps<Item>,
   ref: Ref<HTMLInputElement>,
 ) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -122,7 +122,7 @@ function InnerAutocompletePure<Item>(
 
 export const AutocompletePure = forwardRef(InnerAutocompletePure) as (<Item extends object>(
   // eslint-disable-next-line no-use-before-define
-  props: AutucompletePureProps<Item> & { ref?: Ref<HTMLInputElement> },
+  props: AutocompletePureProps<Item> & { ref?: Ref<HTMLInputElement> },
 ) => React.ReactElement) & {
   displayName: string;
 };

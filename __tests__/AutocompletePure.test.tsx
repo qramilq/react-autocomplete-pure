@@ -1,7 +1,7 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { AutocompletePureTest, AutucompletePureTestProps, theme } from './AutocompletePureTest';
+import { AutocompletePureTest, AutocompletePureTestProps, theme } from './AutocompletePureTest';
 import { RenderItem, RenderInput, RenderContainer } from '../src';
 import { Film } from '../site/types';
 
@@ -26,16 +26,16 @@ const testItems = [
 const testSelectedItemIndex = 1;
 
 function renderAutocompletePureComponent(
-  props: AutucompletePureTestProps & { open: false },
+  props: AutocompletePureTestProps & { open: false },
 ): RenderAutocompletePureComponentCommonReturnType;
 function renderAutocompletePureComponent(
-  props: AutucompletePureTestProps & { open: true },
+  props: AutocompletePureTestProps & { open: true },
 ): RenderAutocompletePureComponentCommonReturnType & {
   listElement: HTMLUListElement;
   itemElements: HTMLLIElement[];
 };
 
-function renderAutocompletePureComponent(props: AutucompletePureTestProps) {
+function renderAutocompletePureComponent(props: AutocompletePureTestProps) {
   const onChange = jest.fn();
   const onSelect = jest.fn();
   const onClickOutside = jest.fn();

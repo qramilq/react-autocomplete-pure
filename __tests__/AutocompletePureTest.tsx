@@ -1,7 +1,7 @@
-import { AutocompletePure, AutucompletePureProps, Theme } from '../src';
+import { AutocompletePure, AutocompletePureProps, Theme } from '../src';
 import { Film } from '../site/types';
 
-export type AutucompletePureTestProps = Partial<AutucompletePureProps<Film>>;
+export type AutocompletePureTestProps = Partial<AutocompletePureProps<Film>>;
 
 export const theme: Theme = {
   container: 'containerClassName',
@@ -9,7 +9,7 @@ export const theme: Theme = {
   item: 'itemClassName',
 };
 
-export function AutocompletePureTest(props: AutucompletePureTestProps) {
+export function AutocompletePureTest(props: AutocompletePureTestProps) {
   return (
     <>
       <label htmlFor="react-autocomplete-pure">Label</label>

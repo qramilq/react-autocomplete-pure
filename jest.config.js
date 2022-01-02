@@ -2,5 +2,5 @@
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['AutocompletePureTestComponent.tsx'],
+  testPathIgnorePatterns: ['AutocompletePureTest.tsx'],
 };

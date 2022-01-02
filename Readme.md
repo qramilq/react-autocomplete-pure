@@ -11,7 +11,7 @@ import {
   AutocompletePureProps,
   ChangeReason,
   RenderItem,
-} from 'rc-autocomplete-pure';
+} from 'react-autocomplete-pure';
 
 type Film = { title: string; year: number };
 
@@ -24,7 +24,7 @@ const renderItem: RenderItem<Film> = (item, { isHighlighted }) => (
 const getSuggestionValue = (item: Film) => item.title;
 
 function App() {
-  const [isOpen, setIsOpen] = useState<booleaan>(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [suggestions, setSuggestions] = useState<Film[]>([]);
   const [value, setValue] = useState<string>('');
 
@@ -74,7 +74,7 @@ function App() {
 
 ## Demo
 
-Feel free to play with `AutocompletePure` component in [Sandbox](http://codesandbox)
+Feel free to play with `AutocompletePure` component in [Sandbox](https://codesandbox.io/s/vibrant-field-mmrow)
 
 ## Installation
 

@@ -1,9 +1,9 @@
-import { AutucompletePureProps, RenderItem } from '../src';
+import { AutocompletePureProps, RenderItem } from '../src';
 
 export type Film = {
   title: string;
   year: number;
 };
 
-export type AutocompletePurePropsFilm = AutucompletePureProps<Film>;
+export type AutocompletePurePropsFilm = AutocompletePureProps<Film>;
 export type RenderFilmItem = RenderItem<Film>;

@@ -27,7 +27,7 @@ type OnChangeAdditionalData = { value: string; reason: ChangeReason };
 export type Theme = Partial<Record<'container' | 'list' | 'item', string>>;
 
 // COMPONENTS PROPS
-export interface AutucompletePureProps<Item>
+export interface AutocompletePureProps<Item>
   extends Omit<ComponentPropsWithRef<'input'>, 'onChange' | 'onSelect'> {
   /**
    * If `true`, the item list is shown

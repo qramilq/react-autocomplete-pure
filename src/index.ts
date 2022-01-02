@@ -1,6 +1,6 @@
 export { AutocompletePure } from './AutocompletePure';
 export type {
-  AutucompletePureProps,
+  AutocompletePureProps,
   RenderItem,
   RenderInput,
   RenderContainer,
