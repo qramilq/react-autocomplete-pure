@@ -39,7 +39,7 @@ function InnerAutocompletePure<Item>(
   const [highlightedItemIndex, setHighlightedItemIndex] = useState<number>(DEFAULT_ITEM_INDEX);
 
   const handleInputKeyDown = (event: KeyboardEvent<HTMLInputElement>) => {
-    const { code } = event;
+    const { code } = event.nativeEvent;
 
     switch (code) {
       case 'ArrowDown': {
